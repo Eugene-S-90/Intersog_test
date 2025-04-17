@@ -13,9 +13,9 @@ describe('HomePage', () => {
   beforeEach(() => {
     mockUseUserStore.mockReturnValue({
       users: [],
-      loading: false,
+      isLoading: false,
       error: null,
-      searchTerm: '',
+      searchBarInput: '',
       fetchUsers: jest.fn(),
       setSearchBarInput: jest.fn(),
     });

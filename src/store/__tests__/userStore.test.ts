@@ -14,7 +14,7 @@ describe('userStore - fetchUsers()', () => {
   beforeEach(() => {
     useUserStore.setState({
       users: [],
-      loading: false,
+      isLoading: false,
       error: null,
       searchBarInput: '',
       fetchUsers: useUserStore.getState().fetchUsers,
@@ -30,7 +30,7 @@ describe('userStore - fetchUsers()', () => {
     const state = useUserStore.getState();
     expect(state.users).toHaveLength(1);
     expect(state.users[0].name).toBe('Jon');
-    expect(state.loading).toBe(false);
+    expect(state.isLoading).toBe(false);
     expect(state.error).toBeNull();
   });
 });

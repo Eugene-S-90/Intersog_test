@@ -1,5 +1,5 @@
-import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { SearchBar } from '../SearchBar';
 import { useUserStore } from '../../store/userStore';
 
@@ -15,7 +15,7 @@ describe('SearchBar', () => {
       searchBarInput: '',
       setSearchBarInput,
       users: [],
-      loading: false,
+      isLoading: false,
       error: null,
       fetchUsers: jest.fn(),
     });
